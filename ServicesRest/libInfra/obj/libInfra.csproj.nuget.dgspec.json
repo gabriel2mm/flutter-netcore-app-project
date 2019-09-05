@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gabriel Maia\\Source\\Repos\\ProjetoAndroid2\\ServicesRest\\ServicesRest\\ServicesRest.csproj": {}
+    "C:\\Users\\Gabriel Maia\\Source\\Repos\\ProjetoAndroid2\\ServicesRest\\libInfra\\libInfra.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gabriel Maia\\Source\\Repos\\ProjetoAndroid2\\ServicesRest\\ServicesRest\\ServicesRest.csproj": {
+    "C:\\Users\\Gabriel Maia\\Source\\Repos\\ProjetoAndroid2\\ServicesRest\\libInfra\\libInfra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gabriel Maia\\Source\\Repos\\ProjetoAndroid2\\ServicesRest\\ServicesRest\\ServicesRest.csproj",
-        "projectName": "ServicesRest",
-        "projectPath": "C:\\Users\\Gabriel Maia\\Source\\Repos\\ProjetoAndroid2\\ServicesRest\\ServicesRest\\ServicesRest.csproj",
+        "projectUniqueName": "C:\\Users\\Gabriel Maia\\Source\\Repos\\ProjetoAndroid2\\ServicesRest\\libInfra\\libInfra.csproj",
+        "projectName": "libInfra",
+        "projectPath": "C:\\Users\\Gabriel Maia\\Source\\Repos\\ProjetoAndroid2\\ServicesRest\\libInfra\\libInfra.csproj",
         "packagesPath": "C:\\Users\\Gabriel Maia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gabriel Maia\\Source\\Repos\\ProjetoAndroid2\\ServicesRest\\ServicesRest\\obj\\",
+        "outputPath": "C:\\Users\\Gabriel Maia\\Source\\Repos\\ProjetoAndroid2\\ServicesRest\\libInfra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,18 +41,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
-            "Microsoft.AspNetCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.1.1, )",
-              "autoReferenced": true
-            },
-            "Microsoft.AspNetCore.Razor.Design": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.1.2, )"
-            },
             "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
