@@ -1,0 +1,6 @@
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\libInfra\bin\Debug\netcoreapp2.1\libInfra.deps.json
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\libInfra\bin\Debug\netcoreapp2.1\libInfra.dll
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\libInfra\obj\Debug\netcoreapp2.1\libInfra.csprojAssemblyReference.cache
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\libInfra\obj\Debug\netcoreapp2.1\libInfra.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\libInfra\obj\Debug\netcoreapp2.1\libInfra.AssemblyInfoInputs.cache
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\libInfra\obj\Debug\netcoreapp2.1\libInfra.AssemblyInfo.cs
