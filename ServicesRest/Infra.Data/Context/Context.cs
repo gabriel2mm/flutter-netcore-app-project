@@ -9,7 +9,7 @@ namespace Infra.Data.Context
 {
     class Context : DbContext
     {
-        public Context() : base("ProjetoAndroid")
+        public Context() : base("ConnDB")
         {
 
         }
