@@ -11805,11 +11805,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gabriel Maia\\source\\repos\\ServicesRest\\ServicesRest\\ServicesRest.csproj",
+      "projectUniqueName": "C:\\Users\\Gabriel Maia\\Source\\Repos\\ProjetoAndroid2\\ServicesRest\\ServicesRest\\ServicesRest.csproj",
       "projectName": "ServicesRest",
-      "projectPath": "C:\\Users\\Gabriel Maia\\source\\repos\\ServicesRest\\ServicesRest\\ServicesRest.csproj",
+      "projectPath": "C:\\Users\\Gabriel Maia\\Source\\Repos\\ProjetoAndroid2\\ServicesRest\\ServicesRest\\ServicesRest.csproj",
       "packagesPath": "C:\\Users\\Gabriel Maia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gabriel Maia\\source\\repos\\ServicesRest\\ServicesRest\\obj\\",
+      "outputPath": "C:\\Users\\Gabriel Maia\\Source\\Repos\\ProjetoAndroid2\\ServicesRest\\ServicesRest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
