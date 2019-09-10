@@ -9,8 +9,7 @@ namespace Domain.Interfaces
 {
     public interface IGenerateToken
     {
-        Usuario GetCredentials(string login, string password);
-
-        String CreateToken(Usuario user);
+        User GetCredentials(string login, string password);
+        String CreateToken(User user);
     }
 }
