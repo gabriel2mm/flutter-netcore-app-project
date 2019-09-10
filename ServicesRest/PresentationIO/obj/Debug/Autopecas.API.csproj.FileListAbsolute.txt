@@ -1,0 +1,2 @@
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\PresentationIO\obj\Debug\Autopecas.API.csprojAssemblyReference.cache
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\PresentationIO\obj\Debug\Autopecas.API.csproj.CoreCompileInputs.cache

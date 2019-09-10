@@ -1,13 +1,9 @@
-﻿using Domain.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Web;
+﻿using System.Net.Http;
+using System.Net;
 using System.Web.Http;
 using Infra.Data.Security;
+using Domain.Interfaces;
 using Domain.Entity;
-using System.Net;
 
 namespace PresentationIO.Controllers.Api
 {
@@ -28,7 +24,7 @@ namespace PresentationIO.Controllers.Api
             }
             else
             {
-                return request.CreateErrorResponse(System.Net.HttpStatusCode.Unauthorized, "Não autorizado");
+                return request.CreateErrorResponse(HttpStatusCode.Unauthorized, "Não autorizado");
             }
         }
     }

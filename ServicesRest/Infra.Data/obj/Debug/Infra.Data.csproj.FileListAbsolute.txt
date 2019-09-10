@@ -18,9 +18,9 @@ C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Infra.Data\bin\D
 C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Infra.Data\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Infra.Data\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
 C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Infra.Data\obj\Debug\Infra.Data.csprojAssemblyReference.cache
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Infra.Data\obj\Debug\Infra.Data.Migrations.Initial.resources
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Infra.Data\obj\Debug\Infra.Data.csproj.GenerateResource.cache
 C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Infra.Data\obj\Debug\Infra.Data.csproj.CoreCompileInputs.cache
 C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Infra.Data\obj\Debug\Infra.Data.csproj.CopyComplete
 C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Infra.Data\obj\Debug\Infra.Data.dll
 C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Infra.Data\obj\Debug\Infra.Data.pdb
-C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Infra.Data\obj\Debug\Infra.Data.Migrations.Initial.resources
-C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Infra.Data\obj\Debug\Infra.Data.csproj.GenerateResource.cache
