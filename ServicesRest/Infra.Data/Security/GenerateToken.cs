@@ -13,9 +13,9 @@ using System.Threading.Tasks;
 
 namespace Infra.Data.Security
 {
-    class GenerateToken : IGenerateToken
+    public class GenerateToken : IGenerateToken
     {
-        public string CreateToken(Usuario user)
+        public string CreateToken(User user)
         {
             DateTime issuedAt = DateTime.UtcNow;
             DateTime expires = DateTime.UtcNow.AddMinutes(1);
@@ -36,11 +36,11 @@ namespace Infra.Data.Security
             return tokenHandler.WriteToken(token);
         }
 
-        public Usuario GetCredentials(string login, string password)
+        public User GetCredentials(string login, string password)
         {
-            using (UsuarioRepository repository = new UsuarioRepository())
+            using (UserRepository repository = new UserRepository())
             {
-                Usuario user = repository.Get((u => u.Login == login && u.Password == password)).FirstOrDefault();
+                User user = repository.Get((u => u.Login == login && u.Password == password)).FirstOrDefault();
                 if (user != null)
                 {
                     user.Password = String.Empty;

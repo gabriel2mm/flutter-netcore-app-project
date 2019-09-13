@@ -1,0 +1,16 @@
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Domain\bin\Debug\Domain.dll
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Domain\bin\Debug\Domain.pdb
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Domain\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Domain\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Domain\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Domain\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Domain\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Domain\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Domain\bin\Debug\Microsoft.IdentityModel.Logging.xml
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Domain\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Domain\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Domain\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Domain\obj\Debug\Autopecas.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Domain\obj\Debug\Autopecas.Domain.csproj.CopyComplete
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Domain\obj\Debug\Domain.dll
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Domain\obj\Debug\Domain.pdb

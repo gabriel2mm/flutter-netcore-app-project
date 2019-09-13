@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Domain.Entity;
 using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Infra.Data.Context
 {
@@ -11,7 +7,7 @@ namespace Infra.Data.Context
     {
         public Context() : base("ConnDB")
         {
-
         }
+        public DbSet<User> Users { get; set; }
     }
 }
