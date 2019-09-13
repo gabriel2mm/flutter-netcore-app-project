@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra.Data", "Infra.Data\In
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autopecas.API", "PresentationIO\Autopecas.API.csproj", "{4BCAC97A-826B-4AB9-A388-88970A71AE37}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Autopecas.Utils", "Autopecas.Utils", "{55C3B0C7-E8B2-47D2-AE03-CD35C24805E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autopecas.Utils", "Autopecas.Utils\Autopecas.Utils.csproj", "{5087FC87-35EE-4798-8AF3-290FBE8818E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +39,10 @@ Global
 		{4BCAC97A-826B-4AB9-A388-88970A71AE37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BCAC97A-826B-4AB9-A388-88970A71AE37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BCAC97A-826B-4AB9-A388-88970A71AE37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5087FC87-35EE-4798-8AF3-290FBE8818E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5087FC87-35EE-4798-8AF3-290FBE8818E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5087FC87-35EE-4798-8AF3-290FBE8818E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5087FC87-35EE-4798-8AF3-290FBE8818E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +52,7 @@ Global
 		{1726A428-0495-41C9-A9E7-FE6F4B2210AB} = {09FE2E5F-118A-4501-BE97-7DDC71678D66}
 		{5187EDF2-A781-4DED-B6C1-BB678E2F8E38} = {CFE7DF74-73A7-4786-B5F9-59D4C303A289}
 		{4BCAC97A-826B-4AB9-A388-88970A71AE37} = {0FA4F2AE-6E0F-4718-A233-355CB85B1FA2}
+		{5087FC87-35EE-4798-8AF3-290FBE8818E3} = {55C3B0C7-E8B2-47D2-AE03-CD35C24805E1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B9F6E737-7DB4-4DC2-AE6C-3499A83F6817}
