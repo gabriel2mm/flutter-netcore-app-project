@@ -14,3 +14,9 @@ C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Domain\obj\Debug
 C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Domain\obj\Debug\Autopecas.Domain.csproj.CopyComplete
 C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Domain\obj\Debug\Domain.dll
 C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Domain\obj\Debug\Domain.pdb
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Domain\bin\Debug\Domain.dll.config
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Domain\bin\Debug\EntityFramework.dll
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Domain\bin\Debug\EntityFramework.xml
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Domain\obj\Debug\Autopecas.Domain.csprojAssemblyReference.cache

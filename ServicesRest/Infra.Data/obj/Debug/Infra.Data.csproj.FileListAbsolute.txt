@@ -24,3 +24,9 @@ C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Infra.Data\obj\D
 C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Infra.Data\obj\Debug\Infra.Data.csproj.CopyComplete
 C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Infra.Data\obj\Debug\Infra.Data.dll
 C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Infra.Data\obj\Debug\Infra.Data.pdb
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Infra.Data\bin\Debug\Autopecas.Utils.dll
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Infra.Data\bin\Debug\BCrypt.Net.dll
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Infra.Data\bin\Debug\Autopecas.Utils.pdb
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Infra.Data\bin\Debug\Domain.dll.config
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Infra.Data\bin\Debug\BCrypt.Net.xml
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Infra.Data\obj\Debug\Infra.Data.Migrations.NovasTabelas.resources

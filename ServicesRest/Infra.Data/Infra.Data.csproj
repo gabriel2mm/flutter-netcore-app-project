@@ -36,6 +36,14 @@
     <Compile Include="Migrations\201909092337021_Initial.Designer.cs">
       <DependentUpon>201909092337021_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201909142312359_NovasTabelas.cs" />
+    <Compile Include="Migrations\201909142312359_NovasTabelas.Designer.cs">
+      <DependentUpon>201909142312359_NovasTabelas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909142313508_Organization.cs" />
+    <Compile Include="Migrations\201909142313508_Organization.Designer.cs">
+      <DependentUpon>201909142313508_Organization.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\ContactRepository.cs" />
@@ -58,6 +66,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201909092337021_Initial.resx">
       <DependentUpon>201909092337021_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909142312359_NovasTabelas.resx">
+      <DependentUpon>201909142312359_NovasTabelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909142313508_Organization.resx">
+      <DependentUpon>201909142313508_Organization.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
