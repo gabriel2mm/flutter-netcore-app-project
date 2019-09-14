@@ -1,4 +1,5 @@
-﻿using Domain.Entity;
+﻿using Autopecas.Utils.Encrypt;
+using Domain.Entity;
 using Domain.Interfaces;
 using Infra.Data.Repository;
 using Microsoft.IdentityModel.Tokens;
@@ -38,6 +39,7 @@ namespace Infra.Data.Security
 
         public User GetCredentials(string login, string password)
         {
+            password = HashingPassword.HashPassword(password);
             using (UserRepository repository = new UserRepository())
             {
                 User user = repository.Get((u => u.Login == login && u.Password == password)).FirstOrDefault();

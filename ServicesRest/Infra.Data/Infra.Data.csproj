@@ -38,12 +38,18 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\ContactRepository.cs" />
+    <Compile Include="Repository\OrganizationRepository.cs" />
     <Compile Include="Repository\RepositoryBase.cs" />
     <Compile Include="Repository\UserRepository.cs" />
     <Compile Include="Security\GenerateToken.cs" />
     <Compile Include="Security\TokenHandler.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Autopecas.Utils\Autopecas.Utils.csproj">
+      <Project>{5087FC87-35EE-4798-8AF3-290FBE8818E3}</Project>
+      <Name>Autopecas.Utils</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Domain\Autopecas.Domain.csproj">
       <Project>{1726a428-0495-41c9-a9e7-fe6f4b2210ab}</Project>
       <Name>Autopecas.Domain</Name>
