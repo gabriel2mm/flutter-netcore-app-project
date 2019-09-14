@@ -9,5 +9,7 @@ namespace Infra.Data.Context
         {
         }
         public DbSet<User> Users { get; set; }
+        public DbSet<Organization> Organizations { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
     }
 }

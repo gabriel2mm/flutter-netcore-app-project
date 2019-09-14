@@ -1,0 +1,15 @@
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Autopecas.Utils\bin\Debug\Autopecas.Utils.dll
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Autopecas.Utils\bin\Debug\Autopecas.Utils.pdb
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Autopecas.Utils\bin\Debug\BCrypt.Net.dll
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Autopecas.Utils\bin\Debug\PInvoke.BCrypt.dll
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Autopecas.Utils\bin\Debug\PInvoke.Kernel32.dll
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Autopecas.Utils\bin\Debug\PInvoke.Windows.Core.dll
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Autopecas.Utils\bin\Debug\BCrypt.Net.xml
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Autopecas.Utils\bin\Debug\PInvoke.BCrypt.xml
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Autopecas.Utils\bin\Debug\PInvoke.Kernel32.xml
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Autopecas.Utils\bin\Debug\PInvoke.Windows.Core.xml
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Autopecas.Utils\obj\Debug\Autopecas.Utils.csprojAssemblyReference.cache
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Autopecas.Utils\obj\Debug\Autopecas.Utils.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Autopecas.Utils\obj\Debug\Autopecas.Utils.csproj.CopyComplete
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Autopecas.Utils\obj\Debug\Autopecas.Utils.dll
+C:\Users\Gabriel Maia\Source\Repos\ProjetoAndroid2\ServicesRest\Autopecas.Utils\obj\Debug\Autopecas.Utils.pdb

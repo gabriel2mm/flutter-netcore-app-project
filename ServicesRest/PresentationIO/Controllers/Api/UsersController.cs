@@ -86,12 +86,17 @@ namespace PresentationIO.Controllers.Api
 
         [Route("Update")]
         [AcceptVerbs("POST")]
-        public HttpResponseMessage Update(HttpRequestMessage request, User user, int? modify)
+        public HttpResponseMessage Update(HttpRequestMessage request, User user, int? modifyPWd)
         {
             try
             {
                 using (UserRepository rep = new UserRepository())
                 {
+
+                    if (modifyPWd != null && modifyPWd == 1)
+                    {
+                        user.Password = HashingPassword.HashPassword(user.Password);
+                    }
                     rep.Update(user);
                     rep.SaveAll();
                 }
