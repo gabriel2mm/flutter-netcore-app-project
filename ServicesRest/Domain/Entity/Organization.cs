@@ -23,28 +23,14 @@ namespace Domain.Entity
         [Column("CNPJ ")]
         [StringLength(100, ErrorMessage = "Name só pode contar 100 caractres")]
         [Index(IsUnique = true)]
-        public string CNPJ
-        {
-            get
-            {
-                return this.CNPJ;
-            }
-            set
-            {
-                if (this.IsCnpj(value))
-                {
-                    this.CNPJ = value;
-                }
-                else
-                {
-                    this.CNPJ = null;
-                }
-            }
-        }
-
+        public string CNPJ { get; set; }
+     
         [Column("User")]
         [Required(ErrorMessage = "User é necessário")]
         public User User { get; set; }
+
+        [Column("Valid")]
+        public bool Valid { get; set; }
 
         public bool IsCnpj(string cnpj)
         {
@@ -54,31 +40,38 @@ namespace Domain.Entity
             int resto;
             string digito;
             string tempCnpj;
-            cnpj = cnpj.Trim();
-            cnpj = cnpj.Replace(".", "").Replace("-", "").Replace("/", "");
-            if (cnpj.Length != 14)
+            if (cnpj != null)
+            {
+                cnpj = cnpj.Trim();
+                cnpj = cnpj.Replace(".", "").Replace("-", "").Replace("/", "");
+                if (cnpj.Length != 14)
+                    return false;
+                tempCnpj = cnpj.Substring(0, 12);
+                soma = 0;
+                for (int i = 0; i < 12; i++)
+                    soma += int.Parse(tempCnpj[i].ToString()) * multiplicador1[i];
+                resto = (soma % 11);
+                if (resto < 2)
+                    resto = 0;
+                else
+                    resto = 11 - resto;
+                digito = resto.ToString();
+                tempCnpj = tempCnpj + digito;
+                soma = 0;
+                for (int i = 0; i < 13; i++)
+                    soma += int.Parse(tempCnpj[i].ToString()) * multiplicador2[i];
+                resto = (soma % 11);
+                if (resto < 2)
+                    resto = 0;
+                else
+                    resto = 11 - resto;
+                digito = digito + resto.ToString();
+                return cnpj.EndsWith(digito);
+            }
+            else
+            {
                 return false;
-            tempCnpj = cnpj.Substring(0, 12);
-            soma = 0;
-            for (int i = 0; i < 12; i++)
-                soma += int.Parse(tempCnpj[i].ToString()) * multiplicador1[i];
-            resto = (soma % 11);
-            if (resto < 2)
-                resto = 0;
-            else
-                resto = 11 - resto;
-            digito = resto.ToString();
-            tempCnpj = tempCnpj + digito;
-            soma = 0;
-            for (int i = 0; i < 13; i++)
-                soma += int.Parse(tempCnpj[i].ToString()) * multiplicador2[i];
-            resto = (soma % 11);
-            if (resto < 2)
-                resto = 0;
-            else
-                resto = 11 - resto;
-            digito = digito + resto.ToString();
-            return cnpj.EndsWith(digito);
+            }
         }
     }
 }
