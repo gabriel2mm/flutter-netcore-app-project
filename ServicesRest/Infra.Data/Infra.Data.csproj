@@ -12,6 +12,8 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,17 +34,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Context\Context.cs" />
-    <Compile Include="Migrations\201909092337021_Initial.cs" />
-    <Compile Include="Migrations\201909092337021_Initial.Designer.cs">
-      <DependentUpon>201909092337021_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201909240024516_TabelasNovas.cs" />
+    <Compile Include="Migrations\201909240024516_TabelasNovas.Designer.cs">
+      <DependentUpon>201909240024516_TabelasNovas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201909142312359_NovasTabelas.cs" />
-    <Compile Include="Migrations\201909142312359_NovasTabelas.Designer.cs">
-      <DependentUpon>201909142312359_NovasTabelas.cs</DependentUpon>
+    <Compile Include="Migrations\201909240028178_newTavles2.cs" />
+    <Compile Include="Migrations\201909240028178_newTavles2.Designer.cs">
+      <DependentUpon>201909240028178_newTavles2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201909142313508_Organization.cs" />
-    <Compile Include="Migrations\201909142313508_Organization.Designer.cs">
-      <DependentUpon>201909142313508_Organization.cs</DependentUpon>
+    <Compile Include="Migrations\201909240035148_ajustOrganizationTable.cs" />
+    <Compile Include="Migrations\201909240035148_ajustOrganizationTable.Designer.cs">
+      <DependentUpon>201909240035148_ajustOrganizationTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -64,22 +66,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201909092337021_Initial.resx">
-      <DependentUpon>201909092337021_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201909142312359_NovasTabelas.resx">
-      <DependentUpon>201909142312359_NovasTabelas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201909142313508_Organization.resx">
-      <DependentUpon>201909142313508_Organization.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.0.1\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.0.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.IdentityModel.JsonWebTokens, Version=5.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -108,6 +99,17 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201909240024516_TabelasNovas.resx">
+      <DependentUpon>201909240024516_TabelasNovas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909240028178_newTavles2.resx">
+      <DependentUpon>201909240028178_newTavles2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909240035148_ajustOrganizationTable.resx">
+      <DependentUpon>201909240035148_ajustOrganizationTable.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
