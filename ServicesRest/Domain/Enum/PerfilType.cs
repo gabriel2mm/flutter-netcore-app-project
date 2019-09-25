@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Enum
 {
-    public enum Perfis
+    public enum PerfilType
     {
         Normal = 1,
         AutoPeca = 2,
