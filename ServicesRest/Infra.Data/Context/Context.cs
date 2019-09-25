@@ -14,8 +14,11 @@ namespace Infra.Data.Context
             base.OnModelCreating(modelBuilder);
         }
 
-        public DbSet<User> Users { get; set; }
-        public DbSet<Organization> Organizations { get; set; }
-        public DbSet<Contact> Contacts { get; set; }
+        public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<Organization> Organizations { get; set; }
+        public virtual DbSet<Contact> Contacts { get; set; }
+        public virtual DbSet<Model> Models { get; set; }
+        public virtual DbSet<Brand> Brands { get; set; }
+        public virtual DbSet<Category> Categories { get; set; }
     }
 }

@@ -1,20 +1,18 @@
-﻿using Autopecas.Utils.Encrypt;
-using Domain.Entity;
+﻿using Domain.Entity;
 using Infra.Data.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Web;
 using System.Web.Http;
-using System.Windows.Documents;
 
-namespace PresentationIO.Controllers.Api
+namespace API.Controllers.Api
 {
-
     [Authorize]
-    [RoutePrefix("api/Users")]
-    public class UsersController : ApiController
+    [RoutePrefix("api/Brand")]
+    public class BrandController : ApiController
     {
         [Route("GetAll")]
         [AcceptVerbs("GET")]
@@ -22,16 +20,12 @@ namespace PresentationIO.Controllers.Api
         {
             try
             {
-                List<User> users;
-                using (UserRepository repository = new UserRepository())
+                List<Brand> Brands;
+                using (BrandRepository repository = new BrandRepository())
                 {
-                    users = repository.GetAll().ToList<User>();
-                    foreach (User u in users)
-                    {
-                        u.Password = null;
-                    }
+                    Brands = repository.GetAll().ToList<Brand>();
                 }
-                return request.CreateResponse<List<User>>(HttpStatusCode.OK, users);
+                return request.CreateResponse<List<Brand>>(HttpStatusCode.OK, Brands);
             }
             catch (Exception e)
             {
@@ -44,14 +38,13 @@ namespace PresentationIO.Controllers.Api
         {
             try
             {
-                using (UserRepository rep = new UserRepository())
+                using (BrandRepository rep = new BrandRepository())
                 {
-                    User user = rep.Find(id);
-                    user.Password = null;
+                    Brand Brand = rep.Find(id);
 
-                    if (user != null)
+                    if (Brand != null)
                     {
-                        return request.CreateResponse<User>(HttpStatusCode.Accepted, user);
+                        return request.CreateResponse<Brand>(HttpStatusCode.Accepted, Brand);
                     }
                     else
                     {
@@ -66,18 +59,17 @@ namespace PresentationIO.Controllers.Api
         }
         [AllowAnonymous]
         [Route("Add")]
-        public HttpResponseMessage Add(HttpRequestMessage request, User user)
+        [AcceptVerbs("POST")]
+        public HttpResponseMessage Add(HttpRequestMessage request, Brand Brand)
         {
             try
             {
-                using (UserRepository rep = new UserRepository())
+                using (BrandRepository rep = new BrandRepository())
                 {
-                    user.Password = HashingPassword.HashPassword(user.Password);
-                    rep.Add(user);
+                    rep.Add(Brand);
                     rep.SaveAll();
                 }
-                user.Password = null;
-                return request.CreateResponse<User>(HttpStatusCode.OK, user);
+                return request.CreateResponse<Brand>(HttpStatusCode.OK, Brand);
             }
             catch (Exception e)
             {
@@ -87,22 +79,17 @@ namespace PresentationIO.Controllers.Api
 
 
         [Route("Update")]
-        [AcceptVerbs("POST")]
-        public HttpResponseMessage Update(HttpRequestMessage request, User user, int? modifyPWd)
+        [AcceptVerbs("PUT")]
+        public HttpResponseMessage Update(HttpRequestMessage request, Brand Brand)
         {
             try
             {
-                using (UserRepository rep = new UserRepository())
+                using (BrandRepository rep = new BrandRepository())
                 {
-
-                    if (modifyPWd != null && modifyPWd == 1)
-                    {
-                        user.Password = HashingPassword.HashPassword(user.Password);
-                    }
-                    rep.Update(user);
+                    rep.Update(Brand);
                     rep.SaveAll();
                 }
-                return request.CreateResponse<User>(HttpStatusCode.Accepted, user);
+                return request.CreateResponse<Brand>(HttpStatusCode.Accepted, Brand);
             }
             catch (Exception e)
             {
@@ -116,7 +103,7 @@ namespace PresentationIO.Controllers.Api
         {
             try
             {
-                using (UserRepository rep = new UserRepository())
+                using (BrandRepository rep = new BrandRepository())
                 {
                     rep.Delete((u => u.ID == id));
                     rep.SaveAll();

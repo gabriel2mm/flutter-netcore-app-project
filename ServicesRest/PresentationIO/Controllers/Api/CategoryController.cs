@@ -1,20 +1,18 @@
-﻿using Autopecas.Utils.Encrypt;
-using Domain.Entity;
+﻿using Domain.Entity;
 using Infra.Data.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Web;
 using System.Web.Http;
-using System.Windows.Documents;
 
-namespace PresentationIO.Controllers.Api
+namespace API.Controllers.Api
 {
-
     [Authorize]
-    [RoutePrefix("api/Users")]
-    public class UsersController : ApiController
+    [RoutePrefix("api/Category")]
+    public class CategoryController : ApiController
     {
         [Route("GetAll")]
         [AcceptVerbs("GET")]
@@ -22,16 +20,12 @@ namespace PresentationIO.Controllers.Api
         {
             try
             {
-                List<User> users;
-                using (UserRepository repository = new UserRepository())
+                List<Category> Categorys;
+                using (CategoryRepository repository = new CategoryRepository())
                 {
-                    users = repository.GetAll().ToList<User>();
-                    foreach (User u in users)
-                    {
-                        u.Password = null;
-                    }
+                    Categorys = repository.GetAll().ToList<Category>();
                 }
-                return request.CreateResponse<List<User>>(HttpStatusCode.OK, users);
+                return request.CreateResponse<List<Category>>(HttpStatusCode.OK, Categorys);
             }
             catch (Exception e)
             {
@@ -44,14 +38,13 @@ namespace PresentationIO.Controllers.Api
         {
             try
             {
-                using (UserRepository rep = new UserRepository())
+                using (CategoryRepository rep = new CategoryRepository())
                 {
-                    User user = rep.Find(id);
-                    user.Password = null;
+                    Category Category = rep.Find(id);
 
-                    if (user != null)
+                    if (Category != null)
                     {
-                        return request.CreateResponse<User>(HttpStatusCode.Accepted, user);
+                        return request.CreateResponse<Category>(HttpStatusCode.Accepted, Category);
                     }
                     else
                     {
@@ -64,20 +57,18 @@ namespace PresentationIO.Controllers.Api
                 return request.CreateErrorResponse(HttpStatusCode.BadRequest, e.Message);
             }
         }
-        [AllowAnonymous]
         [Route("Add")]
-        public HttpResponseMessage Add(HttpRequestMessage request, User user)
+        [AcceptVerbs("POST")]
+        public HttpResponseMessage Add(HttpRequestMessage request, Category Category)
         {
             try
             {
-                using (UserRepository rep = new UserRepository())
+                using (CategoryRepository rep = new CategoryRepository())
                 {
-                    user.Password = HashingPassword.HashPassword(user.Password);
-                    rep.Add(user);
+                    rep.Add(Category);
                     rep.SaveAll();
                 }
-                user.Password = null;
-                return request.CreateResponse<User>(HttpStatusCode.OK, user);
+                return request.CreateResponse<Category>(HttpStatusCode.OK, Category);
             }
             catch (Exception e)
             {
@@ -87,22 +78,17 @@ namespace PresentationIO.Controllers.Api
 
 
         [Route("Update")]
-        [AcceptVerbs("POST")]
-        public HttpResponseMessage Update(HttpRequestMessage request, User user, int? modifyPWd)
+        [AcceptVerbs("PUT")]
+        public HttpResponseMessage Update(HttpRequestMessage request, Category Category)
         {
             try
             {
-                using (UserRepository rep = new UserRepository())
+                using (CategoryRepository rep = new CategoryRepository())
                 {
-
-                    if (modifyPWd != null && modifyPWd == 1)
-                    {
-                        user.Password = HashingPassword.HashPassword(user.Password);
-                    }
-                    rep.Update(user);
+                    rep.Update(Category);
                     rep.SaveAll();
                 }
-                return request.CreateResponse<User>(HttpStatusCode.Accepted, user);
+                return request.CreateResponse<Category>(HttpStatusCode.Accepted, Category);
             }
             catch (Exception e)
             {
@@ -116,7 +102,7 @@ namespace PresentationIO.Controllers.Api
         {
             try
             {
-                using (UserRepository rep = new UserRepository())
+                using (CategoryRepository rep = new CategoryRepository())
                 {
                     rep.Delete((u => u.ID == id));
                     rep.SaveAll();

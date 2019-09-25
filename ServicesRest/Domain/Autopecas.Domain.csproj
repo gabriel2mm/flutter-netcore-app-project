@@ -31,11 +31,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Entity\Brand.cs" />
+    <Compile Include="Entity\Category.cs" />
     <Compile Include="Entity\Contact.cs" />
+    <Compile Include="Entity\Model.cs" />
     <Compile Include="Entity\Organization.cs" />
     <Compile Include="Entity\User.cs" />
-    <Compile Include="Enum\Perfis.cs" />
+    <Compile Include="Enum\CategoryType.cs" />
+    <Compile Include="Enum\PerfilType.cs" />
+    <Compile Include="Interfaces\IBrandRepository.cs" />
+    <Compile Include="Interfaces\ICategoryRepository.cs" />
     <Compile Include="Interfaces\IGenerateToken.cs" />
+    <Compile Include="Interfaces\IModelRepository.cs" />
     <Compile Include="Interfaces\IOrganizationRepository.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\ITokenHendler.cs" />

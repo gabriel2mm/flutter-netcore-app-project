@@ -140,7 +140,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\Api\BrandController.cs" />
+    <Compile Include="Controllers\Api\CategoryController.cs" />
     <Compile Include="Controllers\Api\GetTokenController.cs" />
+    <Compile Include="Controllers\Api\ModelController.cs" />
     <Compile Include="Controllers\Api\OrganiozationController.cs" />
     <Compile Include="Controllers\Api\UsersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />

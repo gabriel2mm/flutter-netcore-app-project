@@ -1,20 +1,18 @@
-﻿using Autopecas.Utils.Encrypt;
-using Domain.Entity;
+﻿using Domain.Entity;
 using Infra.Data.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Web;
 using System.Web.Http;
-using System.Windows.Documents;
 
-namespace PresentationIO.Controllers.Api
+namespace API.Controllers.Api
 {
-
     [Authorize]
-    [RoutePrefix("api/Users")]
-    public class UsersController : ApiController
+    [RoutePrefix("api/Model")]
+    public class ModelController : ApiController
     {
         [Route("GetAll")]
         [AcceptVerbs("GET")]
@@ -22,16 +20,12 @@ namespace PresentationIO.Controllers.Api
         {
             try
             {
-                List<User> users;
-                using (UserRepository repository = new UserRepository())
+                List<Model> Models;
+                using (ModelRepository repository = new ModelRepository())
                 {
-                    users = repository.GetAll().ToList<User>();
-                    foreach (User u in users)
-                    {
-                        u.Password = null;
-                    }
+                    Models = repository.GetAll().ToList<Model>();
                 }
-                return request.CreateResponse<List<User>>(HttpStatusCode.OK, users);
+                return request.CreateResponse<List<Model>>(HttpStatusCode.OK, Models);
             }
             catch (Exception e)
             {
@@ -44,14 +38,13 @@ namespace PresentationIO.Controllers.Api
         {
             try
             {
-                using (UserRepository rep = new UserRepository())
+                using (ModelRepository rep = new ModelRepository())
                 {
-                    User user = rep.Find(id);
-                    user.Password = null;
+                    Model Model = rep.Find(id);
 
-                    if (user != null)
+                    if (Model != null)
                     {
-                        return request.CreateResponse<User>(HttpStatusCode.Accepted, user);
+                        return request.CreateResponse<Model>(HttpStatusCode.Accepted, Model);
                     }
                     else
                     {
@@ -64,20 +57,19 @@ namespace PresentationIO.Controllers.Api
                 return request.CreateErrorResponse(HttpStatusCode.BadRequest, e.Message);
             }
         }
-        [AllowAnonymous]
+
         [Route("Add")]
-        public HttpResponseMessage Add(HttpRequestMessage request, User user)
+        [AcceptVerbs("POST")]
+        public HttpResponseMessage Add(HttpRequestMessage request, Model Model)
         {
             try
             {
-                using (UserRepository rep = new UserRepository())
+                using (ModelRepository rep = new ModelRepository())
                 {
-                    user.Password = HashingPassword.HashPassword(user.Password);
-                    rep.Add(user);
+                    rep.Add(Model);
                     rep.SaveAll();
                 }
-                user.Password = null;
-                return request.CreateResponse<User>(HttpStatusCode.OK, user);
+                return request.CreateResponse<Model>(HttpStatusCode.OK, Model);
             }
             catch (Exception e)
             {
@@ -87,22 +79,17 @@ namespace PresentationIO.Controllers.Api
 
 
         [Route("Update")]
-        [AcceptVerbs("POST")]
-        public HttpResponseMessage Update(HttpRequestMessage request, User user, int? modifyPWd)
+        [AcceptVerbs("PUT")]
+        public HttpResponseMessage Update(HttpRequestMessage request, Model Model)
         {
             try
             {
-                using (UserRepository rep = new UserRepository())
+                using (ModelRepository rep = new ModelRepository())
                 {
-
-                    if (modifyPWd != null && modifyPWd == 1)
-                    {
-                        user.Password = HashingPassword.HashPassword(user.Password);
-                    }
-                    rep.Update(user);
+                    rep.Update(Model);
                     rep.SaveAll();
                 }
-                return request.CreateResponse<User>(HttpStatusCode.Accepted, user);
+                return request.CreateResponse<Model>(HttpStatusCode.Accepted, Model);
             }
             catch (Exception e)
             {
@@ -116,7 +103,7 @@ namespace PresentationIO.Controllers.Api
         {
             try
             {
-                using (UserRepository rep = new UserRepository())
+                using (ModelRepository rep = new ModelRepository())
                 {
                     rep.Delete((u => u.ID == id));
                     rep.SaveAll();
