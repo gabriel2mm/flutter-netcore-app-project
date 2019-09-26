@@ -37,6 +37,7 @@ C:\Users\Gabriel Maia\source\repos\ProjetoAndroid3\ServicesRest\Domain\bin\Debug
 C:\Users\Gabriel Maia\source\repos\ProjetoAndroid3\ServicesRest\Domain\bin\Debug\Microsoft.IdentityModel.Tokens.xml
 C:\Users\Gabriel Maia\source\repos\ProjetoAndroid3\ServicesRest\Domain\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Gabriel Maia\source\repos\ProjetoAndroid3\ServicesRest\Domain\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Gabriel Maia\source\repos\ProjetoAndroid3\ServicesRest\Domain\obj\Debug\Autopecas.Domain.csprojAssemblyReference.cache
 C:\Users\Gabriel Maia\source\repos\ProjetoAndroid3\ServicesRest\Domain\obj\Debug\Autopecas.Domain.csproj.CoreCompileInputs.cache
 C:\Users\Gabriel Maia\source\repos\ProjetoAndroid3\ServicesRest\Domain\obj\Debug\Autopecas.Domain.csproj.CopyComplete
 C:\Users\Gabriel Maia\source\repos\ProjetoAndroid3\ServicesRest\Domain\obj\Debug\Domain.dll

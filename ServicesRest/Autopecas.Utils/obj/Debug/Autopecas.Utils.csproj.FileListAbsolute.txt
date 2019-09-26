@@ -23,6 +23,7 @@ C:\Users\Gabriel Maia\source\repos\ProjetoAndroid3\ServicesRest\Autopecas.Utils\
 C:\Users\Gabriel Maia\source\repos\ProjetoAndroid3\ServicesRest\Autopecas.Utils\bin\Debug\PInvoke.BCrypt.xml
 C:\Users\Gabriel Maia\source\repos\ProjetoAndroid3\ServicesRest\Autopecas.Utils\bin\Debug\PInvoke.Kernel32.xml
 C:\Users\Gabriel Maia\source\repos\ProjetoAndroid3\ServicesRest\Autopecas.Utils\bin\Debug\PInvoke.Windows.Core.xml
+C:\Users\Gabriel Maia\source\repos\ProjetoAndroid3\ServicesRest\Autopecas.Utils\obj\Debug\Autopecas.Utils.csprojAssemblyReference.cache
 C:\Users\Gabriel Maia\source\repos\ProjetoAndroid3\ServicesRest\Autopecas.Utils\obj\Debug\Autopecas.Utils.csproj.CoreCompileInputs.cache
 C:\Users\Gabriel Maia\source\repos\ProjetoAndroid3\ServicesRest\Autopecas.Utils\obj\Debug\Autopecas.Utils.csproj.CopyComplete
 C:\Users\Gabriel Maia\source\repos\ProjetoAndroid3\ServicesRest\Autopecas.Utils\obj\Debug\Autopecas.Utils.dll
