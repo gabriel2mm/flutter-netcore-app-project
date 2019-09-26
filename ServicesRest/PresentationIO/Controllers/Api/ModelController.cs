@@ -33,6 +33,41 @@ namespace API.Controllers.Api
             }
         }
         [AcceptVerbs("GET")]
+        [Route("FindByBrand/{id}")]
+        public HttpResponseMessage findByBrand(HttpRequestMessage request, int id)
+        {
+            try
+            {
+                using (ModelRepository repository = new ModelRepository())
+                {
+                    List<Model> models = repository.Get((m => m.Brand.ID == id)).ToList<Model>();
+                    return request.CreateResponse<List<Model>>(HttpStatusCode.OK, models);
+                }
+            }
+            catch (Exception e)
+            {
+                return request.CreateErrorResponse(HttpStatusCode.BadRequest, e.Message);
+            }
+        }
+        [AcceptVerbs("GET")]
+        [Route("FindByCategory/{id}")]
+        public HttpResponseMessage FindByCategory(HttpRequestMessage request, int id)
+        {
+            try
+            {
+                using (ModelRepository repository = new ModelRepository())
+                {
+                    List<Model> models = repository.Get((m => m.Category.ID == id)).ToList<Model>();
+                    return request.CreateResponse<List<Model>>(HttpStatusCode.OK, models);
+                }
+            }
+            catch (Exception e)
+            {
+                return request.CreateErrorResponse(HttpStatusCode.BadRequest, e.Message);
+            }
+        }
+
+        [AcceptVerbs("GET")]
         [Route("Find/{id}")]
         public HttpResponseMessage Find(HttpRequestMessage request, int id)
         {
