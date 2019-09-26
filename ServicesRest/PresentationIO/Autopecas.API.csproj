@@ -140,7 +140,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\Api\BrandController.cs" />
+    <Compile Include="Controllers\Api\CategoryController.cs" />
     <Compile Include="Controllers\Api\GetTokenController.cs" />
+    <Compile Include="Controllers\Api\ModelController.cs" />
     <Compile Include="Controllers\Api\OrganiozationController.cs" />
     <Compile Include="Controllers\Api\UsersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -205,15 +208,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Autopecas.Utils\Autopecas.Utils.csproj">
-      <Project>{5087FC87-35EE-4798-8AF3-290FBE8818E3}</Project>
+      <Project>{5087fc87-35ee-4798-8af3-290fbe8818e3}</Project>
       <Name>Autopecas.Utils</Name>
     </ProjectReference>
     <ProjectReference Include="..\Domain\Autopecas.Domain.csproj">
-      <Project>{1726A428-0495-41C9-A9E7-FE6F4B2210AB}</Project>
+      <Project>{1726a428-0495-41c9-a9e7-fe6f4b2210ab}</Project>
       <Name>Autopecas.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\Infra.Data\Infra.Data.csproj">
-      <Project>{5187EDF2-A781-4DED-B6C1-BB678E2F8E38}</Project>
+      <Project>{5187edf2-a781-4ded-b6c1-bb678e2f8e38}</Project>
       <Name>Infra.Data</Name>
     </ProjectReference>
   </ItemGroup>

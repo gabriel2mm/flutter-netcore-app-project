@@ -41,6 +41,6 @@ namespace Domain.Entity
 
         [Column("Perfil")]
         [Required(ErrorMessage = "Perfil é necessário")]
-        private Perfis Perfil { get; set; }
+        private PerfilType Perfil { get; set; }
     }
 }

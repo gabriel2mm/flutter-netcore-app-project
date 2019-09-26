@@ -64,6 +64,8 @@ namespace PresentationIO.Controllers.Api
                 return request.CreateErrorResponse(HttpStatusCode.BadRequest, e.Message);
             }
         }
+        [AllowAnonymous]
+        [Route("Add")]
         public HttpResponseMessage Add(HttpRequestMessage request, User user)
         {
             try
