@@ -29,6 +29,10 @@ namespace Domain.Entity
         [Required(ErrorMessage = "User é necessário")]
         public User User { get; set; }
 
+        [Column("Contacts")]
+        [Required]
+        public List<Contact> Contacts { get; set; }
+
         [Column("Valid")]
         public bool Valid { get; set; }
 

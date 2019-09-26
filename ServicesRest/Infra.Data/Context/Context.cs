@@ -20,5 +20,7 @@ namespace Infra.Data.Context
         public virtual DbSet<Model> Models { get; set; }
         public virtual DbSet<Brand> Brands { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
+        public virtual DbSet<Part> Parts { get; set; }
+        public virtual DbSet<Advertisement> Advertisements { get; set; }
     }
 }
